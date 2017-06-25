@@ -1,0 +1,39 @@
+@import "https://fonts.googleapis.com/css?family=Oswald:300,500,700";
+
+@import "https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,800";
+
+@include border-box-sizing;
+
+$susy:(
+    columns:10,
+    container: 40em,
+    container-position:center,
+    gutters: 0.25,
+    gutter-position: outside
+);
+
+//colour palette
+$yellow: #ffff00;
+$white: #ffffff;
+$dark: #000000;
+$grey: #666666;
+
+$typeDefault: $grey;
+$navBackground: $white;
+$navHover: $dark;
+$backgroundColor:$white;
+
+//font vars
+$nunito: "Nunito Sans", Helvetica, Arial, sans-serif;
+$oswald: "Oswald", Helvetica, Arial, sans-serif;
+
+$thin: 300;
+$regular: 400;
+$medium:500;
+$bold: 700;
+$heavy: 800;
+
+$headFont: $oswald $medium;
+$mainFont: $nunito $thin;
+$headColor: lighten($grey, 20);
+

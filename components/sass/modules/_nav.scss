@@ -1,0 +1,22 @@
+
+nav .navbar{
+    @include container;
+    @include span(3 at 1 of 10);
+    @include clearfix;
+    line-height:15px;
+    padding-top:1em;
+    display:inline-block;
+    width:150px;
+    ul{
+        li{
+            a:link{
+            color:$dark;
+            background-color:$white;
+            text-decoration:none;
+            display:inline-block;
+            font-size: 1em;
+            }
+        }
+    }
+
+}
