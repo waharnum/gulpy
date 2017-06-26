@@ -4,41 +4,37 @@ $imageWidth:350px;
 header{
     @include container;
     @include clearfix;
-    @include span (10 at 1 of 10);
+    @include span (10 at 1 of 12);
     display:block;
     width:100%;
     top:0;
-    padding:0;
+    padding:0 0 1em 0;
     .boxLeft{
-    @include span (3 at 1 of 10);
-    top:0;
-    margin-left:0;
-    display:inline-block;;
+    @include span (5 at 1 of 12);
+    display:inline-block;
     width:$imageWidth/2;
     max-height:$imageHeight;
     text-align:center;
     padding-top:$imageHeight/2;
-    padding-bottom:$imageHeight/2;
     }
     .boxRight{
-    @include span (3 at 7 of 10);
+    @include span (5 at 8 of 12);
     display:inline-block;
     width:0;
     text-align:center;
     padding-top:$imageHeight/2;
     vertical-align:top;
-    text-align:center;
+    max-height:$imageHeight;
     }
     h2{
     font:$headFont;
     display:block;
     }
     p,img{
-    @include span (5 at 3 of 10);
+    @include span (4 at 3 of 12);
     display:inline-block;
     width:$imageWidth;
     height:$imageHeight;
     text-align:center;
 }
-
 }

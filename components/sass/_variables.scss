@@ -1,16 +1,21 @@
-@import "https://fonts.googleapis.com/css?family=Oswald:300,500,700";
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,500,700);
 
-@import "https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,800";
+@import url(http://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,800);
 
 @include border-box-sizing;
 
 $susy:(
-    columns:10,
+    columns:12,
     container: 40em,
     container-position:center,
     gutters: 0.25,
     gutter-position: outside
 );
+
+$narrow: 400px;
+$small: 650px;
+$medium: 960px;
+$wide: 1200px;
 
 //colour palette
 $yellow: #ffff00;
@@ -34,6 +39,6 @@ $bold: 700;
 $heavy: 800;
 
 $headFont: $oswald $medium;
-$mainFont: $nunito $thin;
+$mainFont: $nunito $regular;
 $headColor: lighten($grey, 20);
 

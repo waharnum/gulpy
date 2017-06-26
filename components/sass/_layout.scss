@@ -1,13 +1,12 @@
 
-
 #content{
     @include container;
-    @include span(5 at 5 out of 10);
-    display:block;
+    @include span(6 at 5 out of 12);
+    display:inline-block;
     width:100%;
     .scene {
     text-align:left;
-    padding: 1em 5em 1em 10em;
+    padding: 1em 4em 1em 6em;
 }
 }
 

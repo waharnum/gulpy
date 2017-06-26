@@ -1,18 +1,47 @@
 
-nav .navbar{
+nav, .navbar{
     @include container;
-    @include span(3 at 1 of 10);
+    @include span(4 at 1 of 12);
     @include clearfix;
-    line-height:15px;
+    line-height:20px;
     padding-top:1em;
-    display:inline-block;
-    width:150px;
+    margin-left:0;
+    font-style:italic;
+    text-decoration:none!important;
+    width:180px;
+    color:$dark;
+    text-align:left;
     ul{
         li{
             a:link{
+            font-family: $headFont;
             color:$dark;
             background-color:$white;
-            text-decoration:none;
+            text-decoration:none!important;
+            display:inline-block;
+            font-size: 1em;
+            }
+            a:active{
+            font-family: $headFont;
+            color:$dark;
+            background-color:$white;
+            text-decoration:none!important;
+            display:inline-block;
+            font-size: 1em;
+            }
+            a:visited{
+            font-family: $headFont;
+            color:$dark;
+            background-color:$white;
+            text-decoration:none!important;
+            display:inline-block;
+            font-size: 1em;
+            }
+            a:hover{
+            font-family: $headFont $bold;
+            color:$white;
+            background-color:$dark;
+            text-decoration:none!important;
             display:inline-block;
             font-size: 1em;
             }
