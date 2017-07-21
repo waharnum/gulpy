@@ -1,9 +1,12 @@
-footer{
-	position:relative;
-	padding-top:1em;
-
+footer .footer{
+	@include container;
+	@include span (10 at 2 of 12);
+	font-family: $footerFont;
+	position:static;
+	margin-bottom:1.5em;
+	width:100%;
+	height:auto;
 	#socialmedia{
-		position:static;
-		margin-top:10%;
+		padding-top:10%;
 	}
 }
